@@ -52,4 +52,8 @@ public class Search {
         driver.close();
 
     }
+    @When("I enter {string} as a brand")
+    public void i_enter_as_a_brand(String brandName) {
+        driver.findElement(By.xpath("//input[@id='header-big-screen-search-box']")).sendKeys(brandName);
+    }
 }

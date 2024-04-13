@@ -5,8 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/com/org/next/features/searchWithMultipleTests.feature"
+@CucumberOptions(features = "src/test/java/com/org/next/features/searchWithScenarioOutLine.feature"
+                    //features = "."
                 , plugin = {"pretty", "html:reports.html"}
-                , dryRun = false)
+                , dryRun = false
+                //, tags = "@SmokeTest"
+                )
 public class NextRunner {
 }
